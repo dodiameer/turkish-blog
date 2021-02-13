@@ -14,9 +14,9 @@ ol {
 
 :root {
   font-size: 123.75%;
-  --primary: #fd4242;
-  --primary-dark: #af1d1d;
-  --primary-light: #ff7474;
+  --primary: #e63946;
+  --primary-dark: #b61625;
+  --primary-light: #f2929a;
   --primary-c: white;
   --secondary: #429ea6;
   --secondary-dark: #296166;
@@ -209,17 +209,22 @@ section.post-list ul {
   justify-content: center;
   flex-direction: column;
   margin-top: 1rem;
+  list-style: none outside;
 }
 
 section.post-list ul li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  display: list-item;
   margin-bottom: 1rem;
 }
 
-section.post-list ul li * {
+section.post-list ul li > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section.post-list ul li > div * {
   margin: 0.1rem;
 }
 

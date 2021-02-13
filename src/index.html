@@ -17,10 +17,12 @@ sort: 1
   <ul aria-labelledby="post-list">
     {% for post in collections.posts reversed %}
     <li>
-      <h4>
-        <a href="{{ post.url | url }}" class="inherit">{{post.data.title}}</a>
-      </h4>
-      <em>Posted on: {{ post.date | date: "%Y - %m - %d"}}</em>
+      <div>
+        <h4>
+          <a href="{{ post.url | url }}" class="inherit">{{post.data.title}}</a>
+        </h4>
+        <em>Posted on: {{ post.date | date: "%Y - %m - %d"}}</em>
+      </div>
     </li>
     {% endfor %}
   </ul>
