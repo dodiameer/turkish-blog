@@ -1,0 +1,27 @@
+---
+title: Anasayfa
+tags: ["pages"]
+sort: 1
+---
+
+<section class="me-section">
+  <img src="/static/images/avatar.jpg" alt="Avatar image" class="avatar" />
+  <p>
+    Merhaba! Benim adım Mohammed. Ben 16 yaşındayım, Iraklıyım, Türkçe
+    öğrenciyim ve web geliştiricisiyim. Bu benim blogum
+  </p>
+</section>
+
+<section class="post-list">
+  <h3 id="post-list">Posts</h3>
+  <ul aria-labelledby="post-list">
+    {% for post in collections.posts reversed %}
+    <li>
+      <h4>
+        <a href="{{ post.url | url }}" class="inherit">{{post.data.title}}</a>
+      </h4>
+      <em>Posted on: {{ post.date | date: "%Y - %m - %d"}}</em>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

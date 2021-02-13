@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }} - Mohammed Ali Agha</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <header aria-labelledby="page-title">
+      <h1>Mohammed Ali Agha</h1>
+      <h2 id="page-title">{{ title }}</h2>
+    </header>
+    <nav>
+      <ul>
+        {% assign sorted_pages = collections.pages | sortOnDataSort %}
+        {% for page in sorted_pages %}
+        <li>
+          <a href="{{ page.url }}">{{ page.data.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <main>
+      {{ content | safe }}
+    </main>
+    <footer>
+      <p>This blog is open-source. <a href="">Take a look on GitHub</a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Slab:wght@300;600&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+:root {
+  font-size: 123.75%;
+  --primary: #fd4242;
+  --primary-dark: #af1d1d;
+  --primary-light: #ff7474;
+  --primary-c: white;
+  --secondary: #429ea6;
+  --secondary-dark: #296166;
+  --secondary-light: #7cc4cb;
+  --secondary-c: white;
+  --header-padding: 1rem;
+  --header-title: 2.25rem;
+  --header-subtitle: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body > main {
+  flex: 1;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: var(--primary);
+  color: var(--primary-c);
+  padding: var(--header-padding);
+  text-align: center;
+}
+header > h1 {
+  font-size: var(--header-title);
+}
+header > h2 {
+  font-size: var(--header-subtitle);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-dark);
+  color: white;
+  padding: calc(var(--header-padding) / 2);
+}
+
+nav a {
+  color: inherit;
+}
+nav > ul > li {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+img.avatar {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 9999px;
+  border: 2px solid var(--secondary-dark);
+}
+
+section.me-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: var(--secondary);
+  color: var(--secondary-c);
+  font-size: 1rem;
+}
+
+section.me-section > * {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background: var(--secondary-dark);
+  color: white;
+  padding: 1.25rem;
+}
+
+footer a {
+  color: inherit;
+}
+
+h1#post-title {
+  text-align: center;
+  margin: 1rem;
+  color: black;
+  text-shadow: 0 2px 1px var(--primary), 0 4px 1px var(--secondary-light);
+}
+
+div.markdown {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  line-height: calc(1.468em + 3px);
+  word-wrap: break-word;
+  word-break: break-word;
+  -ms-word-wrap: break-word;
+  -ms-word-wrap: break-word;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+div.markdown p {
+  margin-bottom: 0.5em;
+}
+
+div.markdown hr {
+  width: 50%;
+  margin: 1em auto;
+  color: var(--secondary);
+}
+
+div.markdown ul,
+div.markdown ol,
+div.markdown li {
+  all: revert;
+  padding: 0;
+  margin: 0;
+  list-style-position: inside;
+}
+
+div.markdown ul,
+div.markdown ol {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+/*? Handling nested lists */
+div.markdown ul > li ul,
+div.markdown ol > li ul,
+div.markdown ul > li ol,
+div.markdown ol > li ol {
+  padding-left: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div.markdown h1,
+div.markdown h2,
+div.markdown h3,
+div.markdown h4,
+div.markdown h5,
+div.markdown h6 {
+  margin-bottom: 0.75em;
+}
+
+div.markdown pre {
+  background: #333;
+  color: white;
+  border-radius: 6px;
+  padding: 0.5em;
+  overflow-x: scroll;
+}
+
+div.markdown code {
+  overflow-x: scroll;
+  margin-right: 0.5em;
+}
+
+section.post-list {
+  margin: 1rem;
+}
+
+h3#post-list {
+  font-size: 2rem;
+  text-align: center;
+}
+section.post-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+section.post-list ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+section.post-list ul li * {
+  margin: 0.1rem;
+}
+
+.inherit {
+  color: inherit;
+}
