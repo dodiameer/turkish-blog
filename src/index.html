@@ -8,12 +8,12 @@ sort: 1
   <img src="/static/images/avatar.jpg" alt="Avatar image" class="avatar" />
   <p>
     Merhaba! Benim adım Mohammed. Ben 16 yaşındayım, Iraklıyım, Türkçe
-    öğrenciyim ve web geliştiricisiyim. Bu benim blogum
+    öğrenciyim ve web geliştiricisiyim. Bu benim blogum.
   </p>
 </section>
 
 <section class="post-list">
-  <h3 id="post-list">Posts</h3>
+  <h3 id="post-list">Blog yazıları</h3>
   <ul aria-labelledby="post-list">
     {% for post in collections.posts reversed %}
     <li>
@@ -21,7 +21,7 @@ sort: 1
         <h4>
           <a href="{{ post.url | url }}" class="inherit">{{post.data.title}}</a>
         </h4>
-        <em>Posted on: {{ post.date | date: "%Y - %m - %d"}}</em>
+        <span>Posted on: {{ post.date | date: "%Y - %m - %d"}}</span>
       </div>
     </li>
     {% endfor %}

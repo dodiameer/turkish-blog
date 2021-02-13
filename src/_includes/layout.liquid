@@ -14,8 +14,8 @@
     </header>
     <nav>
       <ul>
-        {% assign sorted_pages = collections.pages | sortOnDataSort %}
-        {% for page in sorted_pages %}
+        {% assign sorted_pages = collections.pages | sortOnDataSort %} {% for
+        page in sorted_pages %}
         <li>
           <a href="{{ page.url }}">{{ page.data.title }}</a>
         </li>
@@ -26,7 +26,7 @@
       {{ content | safe }}
     </main>
     <footer>
-      <p>This blog is open-source. <a href="">Take a look on GitHub</a></p>
+      <p>Bu blog açık kaynaklıdır. <a href="">GitHub'de bir göz at.</a></p>
     </footer>
   </body>
 </html>
