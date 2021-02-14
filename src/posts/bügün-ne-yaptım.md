@@ -1,5 +1,6 @@
 ---
 title: Bügün ne yaptım?
+date: 2021-02-14T20:45:40.680Z
 ---
 
 Dün gece kar yağışı, bügün saat 11:30’te kalktım. Kalktıktan sonra, arabamızdan su paketi aldım, ve kahvaltı ettim.
