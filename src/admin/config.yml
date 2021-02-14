@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: dodiameer/turkish-blog
+  branch: main
+media_folder: "src/static/images"
+public_folder: "/static/images"
+collections:
+  - name: "post"
+    label: "Post"
+    folder: "src/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Content", name: "body", widget: "markdown" }

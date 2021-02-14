@@ -15,6 +15,8 @@ const sortOnDataSort = (collection) => {
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/static")
   eleventyConfig.addWatchTarget("src/static/")
+  eleventyConfig.addPassthroughCopy("src/admin/config.yml")
+  eleventyConfig.addWatchTarget("src/admin/config.yml")
   // @ts-ignore
   eleventyConfig.addLiquidFilter("sortOnDataSort", sortOnDataSort)
   return {
