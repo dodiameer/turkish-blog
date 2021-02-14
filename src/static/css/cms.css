@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Slab:wght@300;600&display=swap");
+
+:root {
+  font-size: 123.75%;
+  --primary: #e63946;
+  --primary-dark: #b61625;
+  --primary-light: #f2929a;
+  --primary-c: white;
+  --secondary: #429ea6;
+  --secondary-dark: #296166;
+  --secondary-light: #7cc4cb;
+  --secondary-c: white;
+  --header-padding: 1rem;
+  --header-title: 2.25rem;
+  --header-subtitle: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  line-height: calc(1.468em + 3px);
+  word-wrap: break-word;
+  word-break: break-word;
+  -ms-word-wrap: break-word;
+  -ms-word-wrap: break-word;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+p {
+  margin-bottom: 0.5em;
+}
+
+hr {
+  width: 50%;
+  margin: 1em auto;
+  color: var(--secondary);
+}
+
+ul,
+ol,
+li {
+  all: revert;
+  padding: 0;
+  margin: 0;
+  list-style-position: inside;
+}
+
+ul,
+ol {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+/*? Handling nested lists */
+ul > li ul,
+ol > li ul,
+ul > li ol,
+ol > li ol {
+  padding-left: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.75em;
+}
+
+pre {
+  background: #333;
+  color: white;
+  border-radius: 6px;
+  padding: 0.5em;
+  overflow-x: scroll;
+}
+
+code {
+  overflow-x: scroll;
+  margin-right: 0.5em;
+}
