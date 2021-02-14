@@ -2,5 +2,6 @@
   "layout": "post.layout.liquid",
   "tags": [
     "posts"
-  ]
+  ],
+  "date": "Created"
 }
