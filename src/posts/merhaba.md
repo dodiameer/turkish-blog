@@ -1,5 +1,6 @@
 ---
 title: Merhaba!
+date: 2021-02-13T20:45:54.682Z
 ---
 
 Merhaba! Benim adım Mohammed. Ben 16 yaşındayım, Iraklıyım, Türkçe öğrencisiyim ve web geliştiricisiyim. 2018'den beri ailemle İstanbul'da yaşıyorum. Bizim evimiz çok güzel ama biraz küçük bir apartman dairesi. Marmara sahili evimize çok yakın. Marmara sahili güzel bir yer, ama hafta sonuları çok kalabalık.
