@@ -219,7 +219,7 @@ section.post-list ul li {
 
 section.post-list ul li > div {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
