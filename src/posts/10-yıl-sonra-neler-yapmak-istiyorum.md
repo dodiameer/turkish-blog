@@ -2,7 +2,7 @@
 title: 10 yıl sonra neler yapmak istiyorum?
 date: 2021-02-16T12:48:43.569Z
 ---
-Bu benim ödevim, onun teslim tarihisi `19.02.2021`
+Bu benim ödevim, onun teslim tarihisi `19.02.2021` `:)`
 
 - - -
 
