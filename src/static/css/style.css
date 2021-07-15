@@ -128,8 +128,7 @@ h1#post-title {
   text-shadow: 0 2px 1px var(--primary), 0 4px 1px var(--secondary-light);
 }
 
-div.markdown {
-  padding: 1rem;
+.markdown {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
@@ -141,53 +140,55 @@ div.markdown {
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
-div.markdown p {
+.markdown p {
   margin-bottom: 0.5em;
 }
 
-div.markdown hr {
+.markdown hr {
   width: 50%;
   margin: 1em auto;
   color: var(--secondary);
 }
 
-div.markdown ul,
-div.markdown ol,
-div.markdown li {
+.markdown ul,
+.markdown ol,
+.markdown li {
   all: revert;
   padding: 0;
   margin: 0;
   list-style-position: inside;
 }
 
-div.markdown ul,
-div.markdown ol {
+.markdown ul,
+.markdown ol {
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
 
 /*? Handling nested lists */
-div.markdown ul > li ul,
-div.markdown ol > li ul,
-div.markdown ul > li ol,
-div.markdown ol > li ol {
+.markdown ul > li ul,
+.markdown ol > li ul,
+.markdown ul > li ol,
+.markdown ol > li ol {
   padding-left: 1em;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-div.markdown h1,
-div.markdown h2,
-div.markdown h3,
-div.markdown h4,
-div.markdown h5,
-div.markdown h6 {
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
   margin-bottom: 0.75em;
 }
 
-div.markdown pre {
+.markdown pre {
   background: #333;
   color: white;
   border-radius: 6px;
@@ -195,7 +196,7 @@ div.markdown pre {
   overflow-x: scroll;
 }
 
-div.markdown code {
+.markdown code {
   overflow-x: scroll;
   margin-right: 0.5em;
 }
