@@ -9,16 +9,19 @@ sort: 1
     <div class="content flow-y">
       <img src="/static/images/avatar.jpg" alt="Avatar image" class="avatar" />
       <p>
-        Merhaba! Benim adım Mohammed. Ben 16 yaşındayım, Iraklıyım, Türkçe
-        öğrenciyim ve web geliştiricisiyim. Bu benim blogum.
+        Merhaba! Ben Mohammed. 16 yaşındayım, Iraklıyım, Türkçe
+        öğrencisiyim ve web geliştiricisiyim. Burası blogum. Burada 
+        günlük hayatımdaki olaylar, fikirlarım, derslerim, vb. hakkında
+        yazılar yazarım.
       </p>
+      <p>Ben şimdi B2 seviyesindeyim ve galiba bu son seviyem olacak.</p>
     </div>
   </div>
 </section>
 
 <div class="container">
   <section class="post-list">
-    <h3 id="post-list">Blog yazıları</h3>
+    <h3 id="post-list">Son Yazılarım</h3>
     <ul aria-labelledby="post-list" class="row">
       {% for post in collections.posts reversed %}
       <li class="col-md-12 col-lg-6 flow-y">
