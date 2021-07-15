@@ -96,18 +96,18 @@ img.avatar {
 }
 
 section.me-section {
-  padding: 1rem;
+  padding: 1rem 0;
   background: var(--secondary);
   color: var(--secondary-c);
   font-size: 1rem;
 }
 
-section.me-section > .container {
+section.me-section .content {
   display: flex;
   flex-direction: column;
 }
 
-section.me-section > .container > .avatar {
+section.me-section .avatar {
   align-self: center;
 }
 
@@ -201,7 +201,7 @@ div.markdown code {
 }
 
 section.post-list {
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 h3#post-list {
