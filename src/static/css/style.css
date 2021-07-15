@@ -83,6 +83,10 @@ nav > ul > li {
   margin: 0.5rem;
 }
 
+.flow-y > *:not(:last-child) {
+  margin-bottom: var(--flow-y, 0.5rem);
+}
+
 img.avatar {
   width: 10rem;
   height: 10rem;
@@ -91,19 +95,19 @@ img.avatar {
 }
 
 section.me-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 2rem;
   background: var(--secondary);
   color: var(--secondary-c);
   font-size: 1rem;
 }
 
-section.me-section > * {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+section.me-section > .container {
+  display: flex;
+  flex-direction: column;
+}
+
+section.me-section > .container > .avatar {
+  align-self: center;
 }
 
 footer {
