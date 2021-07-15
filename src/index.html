@@ -14,18 +14,23 @@ sort: 1
   </div>
 </section>
 
-<section class="post-list">
-  <h3 id="post-list">Blog yazıları</h3>
-  <ul aria-labelledby="post-list">
-    {% for post in collections.posts reversed %}
-    <li>
-      <div>
-        <h4>
-          <a href="{{ post.url | url }}" class="inherit">{{post.data.title}}</a>
-        </h4>
-        <span>Yazma tarihi: {{ post.date | date: "%Y.%m.%d"}}</span>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+<div class="container">
+
+  <section class="post-list">
+    <h3 id="post-list">Blog yazıları</h3>
+    <ul aria-labelledby="post-list" class="row">
+      {% for post in collections.posts reversed %}
+      <li class="col-md-12 col-lg-6 flow-y">
+          <h4>
+            <a href="{{ post.url | url }}" class="inherit">{{post.data.title}}</a>
+          </h4>
+          <div class="spacer"></div>
+          <div class="info">
+            <span>Yazma tarihi: {{ post.date | date: "%Y.%m.%d"}}</span>
+            <a href="{{ post.url | url }}" class="inherit button">Yazıyı oku</a>
+          </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>

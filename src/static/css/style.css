@@ -42,6 +42,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: #fafafa;
 }
 
 body > main {
@@ -95,7 +96,7 @@ img.avatar {
 }
 
 section.me-section {
-  padding: 2rem;
+  padding: 1rem;
   background: var(--secondary);
   color: var(--secondary-c);
   font-size: 1rem;
@@ -205,33 +206,53 @@ section.post-list {
 
 h3#post-list {
   font-size: 2rem;
-  text-align: center;
 }
 section.post-list ul {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column; */
   margin-top: 1rem;
   list-style: none outside;
 }
 
 section.post-list ul li {
-  display: list-item;
-  margin-bottom: 1rem;
-}
-
-section.post-list ul li > div {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  padding: 1rem 0.75rem;
+  box-shadow: 0 2px 6px hsla(0, 0%, 25%, 0.5);
+  justify-content: center;
+  border-radius: 2px;
 }
 
-section.post-list ul li > div * {
-  margin: 0.1rem;
+section.post-list ul li .info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .inherit {
   color: inherit;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.button {
+  color: var(--primary-c);
+  background: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  box-shadow: 0 3px 4px hsla(0, 0%, 25%, 0.5);
+  transition: background-color 0.15s ease-out;
+}
+
+.button:hover {
+  background-color: var(--primary-dark);
 }

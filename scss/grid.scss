@@ -39,10 +39,6 @@
   @include grid-classes("md");
 }
 
-@media screen and (min-width: 1024px) {
-  @include grid-classes("lg");
-}
-
 @media screen and (min-width: 1280px) {
-  @include grid-classes("xl");
+  @include grid-classes("lg");
 }
