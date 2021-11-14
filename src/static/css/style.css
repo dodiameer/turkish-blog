@@ -229,9 +229,9 @@ h1#post-title {
   border: 1px solid var(--primary-dark);
 }
 
-.markdown > *:not([hidden]):not(hr) + *:not([hidden]):not(hr) {
+/* .markdown > *:not([hidden]):not(hr) + *:not([hidden]):not(hr) {
   margin-top: 0.75em;
-}
+} */
 
 section.post-list {
   margin: 1rem 0;
