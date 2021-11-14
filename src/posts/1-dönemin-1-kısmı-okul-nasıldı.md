@@ -2,7 +2,6 @@
 title: "1. Dönemin 1. Kısmı: Okul nasıldı?"
 date: 2021-11-14T15:26:41.096Z
 ---
-# 1. Dönemin 1. Kısmı: Okul Nasıldı?
 
 TLDR: İyidi
 
